@@ -1,17 +1,20 @@
-require("dotenv").config()
+require("dotenv").config();
 
-const pageURL = "https://claro-gestoronline.claro.com.br/evpn4g/login"
+const pageURL = "https://claro-gestoronline.claro.com.br/evpn4g/login";
 
-const mongoURI = process.env.MONGOURI
+const mongoURI = process.env.MONGOURI;
 
-const claroCliente = process.env.CLARO_CLIENTE
-const claroEmail = process.env.CLARO_EMAIL
-const claroSenha = process.env.CLARO_SENHA
+const claroClienteRJ = process.env.CLARO_CLIENTERJ;
+const claroClienteSP = process.env.CLARO_CLIENTESP;
+const claroEmail = process.env.CLARO_EMAIL;
+const claroSenha = process.env.CLARO_SENHA;
 
 module.exports = {
-    pageURL,
-    mongoURI,
-    claroCliente,
-    claroEmail,
-    claroSenha
-}
+  pageURL,
+  mongoURI,
+  claroClienteRJ,
+  claroClienteSP,
+  claroEmail,
+  claroSenha,
+};
+

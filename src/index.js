@@ -4,7 +4,8 @@ const {pageURL} = data
 
 const webScraping = require("./webscraping")
 
-webScraping(pageURL).then(dataObj => {
-    //console.log(dataObj)
-    saveResult(dataObj)
-}).catch(console.error)
+webScraping(pageURL)
+    .then(dataObj => {
+        saveResult(dataObj)
+    })
+    .catch(console.error)
